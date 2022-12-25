@@ -4,16 +4,20 @@
             fetch="https://github.com"
             revision="lineage-20.0" />
 
+    <remote name="hardware"
+            fetch="https://github.com"
+            revision="lineage-19.1"/>
+
     <remote name="device"
             fetch="https://github.com"
-            revision="lineage-20.0"/>
+            revision="master"/>
 
     <remote name="kernel"
             fetch="https://github.com"
-            revision="lineage-20.0"/>
+            revision="master"/>
 
-  <project name="8890q/proprietary_vendor_samsung" path="vendor/samsung" remote="github" />
-  <project name="8890q/android_hardware_samsung" path="hardware/samsung" remote="github" />
-  <project name="sh4rknado/android_device_samsung_universal8895-common" path="device/samsung/dreamlte" remote="github" />
-  <project name="sh4rknado/android_kernel_samsung_universal8895" path="kernel/samsung/universal8895" remote="github" />
+  <project name="8890q/proprietary_vendor_samsung" path="vendor/samsung" remote="vendor" />
+  <project name="8890q/android_hardware_samsung" path="hardware/samsung" remote="hardware" />
+  <project name="sh4rknado/android_device_samsung_universal8895-common" path="device/samsung/dreamlte" remote="device" />
+  <project name="sh4rknado/android_kernel_samsung_universal8895" path="kernel/samsung/universal8895" remote="kernel" />
 </manifest>
