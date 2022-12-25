@@ -23,37 +23,16 @@ this command can be take +/- 2h take one or more cofee :)
     repo sync
 
 
-### local manifest
-
-    mkdir -pv .repo/local_manifests/
-  
-  
-Add the roomservice (all sources code for your specific device)
-
-     wget https://github.com/sh4rknado/lineage-20.0-nethunter/roomservice.xml
-     cp  roomservice.xml .repo/local_manifests/roomservice.xml
+### Add roomservice (all sources code for your specific device)
     
-  <?xml version="1.0" encoding="UTF-8"?>
-  <manifest>
-
-      <remote name="vendor"
-              fetch="https://github.com"
-              revision="lineage-20.0" />
-
-      <remote name="device"
-              fetch="https://github.com"
-              revision="lineage-20.0"/>
-
-      <remote name="kernel"
-              fetch="https://github.com"
-              revision="lineage-20.0"/>
-
-    <project name="8890q/proprietary_vendor_samsung" path="vendor/samsung" remote="github" />
-    <project name="8890q/android_hardware_samsung" path="hardware/samsung" remote="github" />
-    <project name="sh4rknado/android_device_samsung_universal8895-common" path="device/samsung/dreamlte" remote="github" />
-    <project name="sh4rknado/android_kernel_samsung_universal8895" path="kernel/samsung/universal8895" remote="github" />
-  </manifest>
-
+    mkdir -pv .repo/local_manifests/
+    
+    wget https://github.com/sh4rknado/lineage-20.0-nethunter/blob/main/roomservice.xml
+    
+    cp roomservice.xml .repo/local_manifests/roomservice.xml
+    
+    repo sync
+    
 
 ## Ressources
   
