@@ -27,13 +27,15 @@ this command can be take +/- 2h take one or more cofee :)
     
     mkdir -pv .repo/local_manifests/
     
-    wget https://github.com/sh4rknado/lineage-20.0-nethunter/blob/main/roomservice.xml
+    cd .repo/local_manifests/
     
-    cp roomservice.xml .repo/local_manifests/roomservice.xml
+    wget https://raw.githubusercontent.com/sh4rknado/lineage-20.0-nethunter/main/roomservice.xml
+    
+    cd ../../
     
     repo sync
     
-
+    
 ## Ressources
   
 - portage : https://medium.com/@daltonfury42/building-lineageos-for-your-device-a7d26ab50549
