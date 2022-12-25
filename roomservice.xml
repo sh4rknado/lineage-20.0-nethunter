@@ -18,6 +18,6 @@
 
   <project name="8890q/proprietary_vendor_samsung" path="vendor/samsung" remote="vendor" />
   <project name="8890q/android_hardware_samsung" path="hardware/samsung" remote="hardware" />
-  <project name="sh4rknado/android_device_samsung_universal8895-common" path="device/samsung/dreamlte" remote="device" />
-  <project name="sh4rknado/android_kernel_samsung_universal8895" path="kernel/samsung/universal8895" remote="kernel" />
+  <project name="sh4rknado/android_device_samsung_universal8895-common" path="device/samsung/universal8895-common" remote="device" />
+  <project name="sh4rknado/android_kernel_samsung_universal8895" path="kernel/samsung/universal8895-common" remote="kernel" />
 </manifest>
