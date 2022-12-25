@@ -7,28 +7,30 @@ Building Nethunter OS from latest lineage OS for samsung S8 (exynos) (SMG950F).
 
 ### install repo tools
 
-  curl https://storage.googleapis.com/git-repo-downloads/repo > repo
+    curl https://storage.googleapis.com/git-repo-downloads/repo > repo
   
-  chmod a+x repo
+    chmod a+x repo
   
-  sudo mv repo /usr/bin/repo
+    sudo mv repo /usr/bin/repo
 
 
 ### Get the source code
 
 this command can be take +/- 2h take one or more cofee :)
 
-  repo init -u https://github.com/LineageOS/android.git -b lineage-20.0
+    repo init -u https://github.com/LineageOS/android.git -b lineage-20.0
 
-  repo sync
+    repo sync
 
 
 ### local manifest
 
-  mkdir -pv .repo/local_manifests/
+    mkdir -pv .repo/local_manifests/
   
-  sudo nano .repo/local_manifests/roomservice.xml
   
+Add the roomservice (all sources code for your specific device)
+
+  nano .repo/local_manifests/roomservice.xml
   
   <?xml version="1.0" encoding="UTF-8"?>
   <manifest>
