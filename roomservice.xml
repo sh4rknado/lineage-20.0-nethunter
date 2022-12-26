@@ -8,9 +8,9 @@
             fetch="https://github.com"
             revision="lineage-19.1"/>
 
-    <remote name="device"
+    <remote name="policy"
             fetch="https://github.com"
-            revision="master"/>
+            revision="lineage-20"/>
 
     <remote name="kernel"
             fetch="https://github.com"
@@ -18,6 +18,8 @@
 
   <project name="8890q/proprietary_vendor_samsung" path="vendor/samsung" remote="vendor" />
   <project name="8890q/android_hardware_samsung" path="hardware/samsung" remote="hardware" />
-  <project name="sh4rknado/android_device_samsung_universal8895-common" path="device/samsung/universal8895-common" remote="device" />
+  <project name="8890q/android_device_samsung_universal8895-common" path="device/samsung/universal8895-common" remote="vendor" />
+  <project name="8890q/android_device_samsung_dreamlte" path="device/samsung/dreamlte" remote="vendor" />
+  <project name="LineageOS/android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="policy" />
   <project name="sh4rknado/android_kernel_samsung_universal8895" path="kernel/samsung/universal8895-common" remote="kernel" />
 </manifest>
