@@ -4,10 +4,6 @@
             fetch="https://github.com"
             revision="lineage-20.0" />
 
-    <remote name="hardware"
-            fetch="https://github.com"
-            revision="lineage-19.1"/>
-
     <remote name="policy"
             fetch="https://github.com"
             revision="lineage-20"/>
@@ -16,8 +12,12 @@
             fetch="https://github.com"
             revision="master"/>
 
+    <remote name="hardware"
+            fetch="https://github.com"
+            revision="main"/>
+
   <project name="8890q/proprietary_vendor_samsung" path="vendor/samsung" remote="vendor" />
-  <project name="8890q/android_hardware_samsung" path="hardware/samsung" remote="hardware" />
+  <project name="sh4rknado/android_hardware_samsung" path="hardware/samsung" remote="hardware" />
   <project name="8890q/android_device_samsung_universal8895-common" path="device/samsung/universal8895-common" remote="vendor" />
   <project name="8890q/android_device_samsung_dreamlte" path="device/samsung/dreamlte" remote="vendor" />
   <project name="LineageOS/android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="policy" />
